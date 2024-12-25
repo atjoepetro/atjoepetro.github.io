@@ -9,22 +9,21 @@
         body {
             font-family: 'Inter', sans-serif;
             margin: 0;
-            padding: 200px 50px;
+            padding: 50px;
             background-color: #f3f4f6;
             color: #1f1f1f;
             text-align: left;
-            line-height: 1.25;
+            line-height: 1.5;
             font-size: 1rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .logo {
             display: block;
             margin: 0 0 20px 0;
             max-width: 50px;
-        }
-
-        header {
-            margin-bottom: 20px;
         }
 
         nav {
@@ -37,7 +36,7 @@
         }
 
         nav ul li {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         nav ul li a {
@@ -67,52 +66,45 @@
             text-decoration-style: wavy;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
         .footer {
             margin-top: 20px;
+            text-align: left;
         }
 
         h1 {
             margin-top: 0;
-            font-size: 1.25rem; /* 1.25 times the body text size */
+            font-size: 1.25rem;
         }
 
         h2 {
-            font-size: 1.15rem;
+            font-size: 1rem;
             margin-top: 0;
         }
     </style>
 </head>
-<body>
-    <img src="jp-logo.png" alt="JP Logo" class="logo">
-    <header>
-    </header>
 
-    <div class="container">
+<body>
+    <img src="jp-logo.png" alt="Website Logo" class="logo">
+
+    <div>
         <section id="home">
             <p>Joe Petro is a comedy writer in Los Angeles.</p>
-            <p>He produces late night television, exceptional mixtapes, and timeless logos.</p>
+            <p>He produces late night television, exceptional <a href="https://mixtapeclub.substack.com/">mixtapes</a>, and timeless logos.</p>
             <p>His writing has been published in McSweeney’s, featured on the front page of Medium, and printed in more humble, lesser-known publications like the New York Litigator Law Journal.</p>
             <p>This is his home on the Internet.</p>
         </section>
+    </div>
 
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#Writing">Writing</a></li>
+            <li><a href="#Mixtapes">Mixtapes</a></li>
+            <li><a href="#Design">Design</a></li>
         </ul>
     </nav>
-        
-    </div>
 
     <footer class="footer">
-        <p></p>
+        <p>Footer</p>
     </footer>
 </body>
 </html>
