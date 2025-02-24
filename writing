@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe Petro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        function toggleNav() {
+            var footerSymbol = document.getElementById("footer-symbol");
+            var navBar = document.getElementById("nav-bar");
+            if (footerSymbol.textContent === "●") {
+                footerSymbol.textContent = "○";
+                navBar.style.display = "block";
+            } else {
+                footerSymbol.textContent = "●";
+                navBar.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="images/jp-logo-black.png" alt="Logo">
+            <div class="logo-text">
+            <h1>Joe Petro</h1>
+                <p>Los Angeles, CA</p>
+            </div>
+        </div>
+        <section id="main-content">
+            <p><strong>Writing</strong> ∙ Joe is always writing—text messages, emails, checks that his body can’t cash. Sometimes he writes things for television. Sometimes he writes things like this:</p>
+            <h3>Comedy</h3>
+            <p><a href="https://www.mcsweeneys.net/articles/im-your-three-year-old-interior-designer-and-this-is-your-new-home-makeover">I’m Your Three-Year-Old Interior Designer and This Is Your New Home Makeover</a> for McSweeney’s</p>
+
+            <p><a href="https://clippingsilver.substack.com/p/what-is-arcturus">What is Arcturus? (Other Than The New COVID-19 Subvariant XBB.1.16)</a></p>
+            <p><a href="https://clippingsilver.substack.com/p/the-bland-genius-of-williamsburg">The Bland Genius of Williamsburg, VA</a></p>
+            <p><a href="https://clippingsilver.substack.com/p/the-cleveland-guardians-need-a-new">The Cleveland Guardians Need a New Name</a></p>
+            <p><a href="https://clippingsilver.substack.com/p/usa-baseball-new-logo">The Land Of The Free Logo</a></p>
+            <p><a href="https://medium.com/@joe_petro/50-excellent-mashup-halloween-costume-suggestions-for-2015-96539d452448#.bvp809vyn">50 Excellent Mashup Halloween Costume Suggestions</a></p>
+            <p><a href="https://medium.com/@joe_petro/word-watching-b082e09786ee#.izuw1fb8b">Word Watching</a></p>
+            <p><a href="https://joe-petro.medium.com/the-predictive-text-feature-on-my-iphone-writes-a-short-story-c3d9a3a254d9">A Short Story by The Predictive Text Feature on My iPhone</a></p>
+
+            <h3>Music</h3>
+            <p><a href="https://mixtapeclub.substack.com/p/mixtape-the-asterian-luna">The Asterian Luna</a></p>
+            <p><a href="https://mixtapeclub.substack.com/p/-mixtape-the-beatles-in-color?s=w">The Beatles In Color</a></p>
+            <p><a href="https://mixtapeclub.substack.com/p/mixtape-woodward-by-joe-petro">Woodward</a></p>
+            <p><a href="https://mixtapeclub.substack.com/p/mixtape-waxwings">Waxwings</a></p>
+            <p><a href="https://mixtapeclub.substack.com/p/mixtape-muddled-through">Muddled Through</a></p>
+            <p><a href="http://www.musicthinktank.com/blog/the-rise-of-vinyl.html">The Rise of Vinyl</a> for Music Think Tank</p>
+
+            <h3>Television &amp; Culture</h3>
+            <p><a href="https://medium.com/sitcom-world/i-have-questions-about-the-jogging-baboon-from-bojack-horseman-2a51222f7b8e#.bsoftnzht">I Have Questions About the Jogging Baboon from BoJack Horseman</a> for <a href="https://medium.com/sitcom-world/i-have-questions-about-the-jogging-baboon-from-bojack-horseman-2a51222f7b8e#.bomc2pvyy">Sitcom World</a> on Medium</p>
+            <p><a href="https://medium.com/@thenintendad64?p=1f2729ec2129">The Switch: Nintendo’s Final Console</a> for TheNintendad64</p>
+            <p><a href="https://medium.com/@thenintendad64/nintendos-obsession-with-fitness-and-health-is-exactly-what-we-need-right-now-9ad9ac38ac63">Nintendo’s Obsession with Fitness and Health is Exactly What We Need Right Now</a> for TheNintendad64</p>
+
+            <h3>More</h3>
+            <p>Additional writing samples available upon request (e.g., television pilots, picture book manuscripts, wicked limericks).</p>
+
+        </section>
+        <div class="footer" onclick="toggleNav()">
+            <span id="footer-symbol">●</span>
+            <div class="nav-bar" id="nav-bar">
+                <a href="#">email</a>
+                <a href="#">substack</a>
+                <a href="#">instagram</a>
+                <a href="#">bluesky</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
