@@ -3,108 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 50px;
-            background-color: #f3f4f6;
-            color: #1f1f1f;
-            text-align: left;
-            line-height: 1.5;
-            font-size: 1rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+    <title>Joe Petro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        function toggleNav() {
+            var footerSymbol = document.getElementById("footer-symbol");
+            var navBar = document.getElementById("nav-bar");
+            if (footerSymbol.textContent === "●") {
+                footerSymbol.textContent = "○";
+                navBar.style.display = "block";
+            } else {
+                footerSymbol.textContent = "●";
+                navBar.style.display = "none";
+            }
         }
-
-        .logo {
-            display: block;
-            margin: 0 0 20px 0;
-            max-width: 50px;
-        }
-
-        nav {
-            margin-bottom: 20px;
-        }
-
-        nav ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        nav ul li {
-            margin-bottom: 10px;
-        }
-
-        nav ul li a {
-            color: #1f1f1f;
-            text-decoration: underline;
-            text-decoration-style: solid;
-        }
-
-        nav ul li a:hover {
-            text-decoration-style: wavy;
-        }
-
-        nav ul li a:visited {
-            color: #1db954;
-        }
-
-        a {
-            color: #1f1f1f;
-            text-decoration: underline;
-        }
-
-        a:visited {
-            color: #1db954;
-        }
-
-        a:hover {
-            text-decoration-style: wavy;
-        }
-
-        .footer {
-            margin-top: 20px;
-            text-align: left;
-        }
-
-        h1 {
-            margin-top: 0;
-            font-size: 1.25rem;
-        }
-
-        h2 {
-            font-size: 1rem;
-            margin-top: 0;
-        }
-    </style>
+    </script>
 </head>
-
 <body>
-    <img src="jp-logo.png" alt="Website Logo" class="logo">
-
-    <div>
-        <section id="home">
-            <p>Joe Petro is a comedy writer in Los Angeles.</p>
-            <p>He produces late night television, exceptional <a href="https://mixtapeclub.substack.com/">mixtapes</a>, and timeless logos.</p>
-            <p>His writing has been published in McSweeney’s, featured on the front page of Medium, and printed in more humble, lesser-known publications like the New York Litigator Law Journal.</p>
-            <p>This is his home on the Internet.</p>
-        </section>
+    <div class="container">
+        <div class="logo">
+        <a href="https://www.joepetro.net">
+          <img src="images/jp-logo-black.png" alt="Logo">
+        </a>
+            <div class="logo-text">
+                <h1>Joe Petro</h1>
+                <p>Los Angeles, CA</p>
+            </div>
+        </div>
+        <p><b>Joe Petro</b> is a comedy writer in Los Angeles.</p>
+        <p>He produces late night television on <a href="https://www.hbo.com/real-time-with-bill-maher" target="_blank">premium cable</a>.</p>
+        <p>His work has been published in McSweeney’s, featured by Esquire, and printed in at least one prestigious law journal.</p>
+        <p>You can read his writing <a href="https://joepetro.net/writing" target="_blank">here</a>.</p>
+        <p>He hosts a mixtape club called <a href="https://mixtapeclub.substack.com/" target="_blank">Green Bananas</a>. Subscribers receive carefully considered and meticulously sequenced mixes.</p>
+        <p>In his spare time, he moonlights as the world's foremost unknown <a href="https://www.behance.net/atjoepetro" target="_blank">logo designer</a>.</p>
+        <p>Pretty much everybody wants to be his friend.</p>
+        <p>Click that dot below to get in touch.</p>
+        <p><em>Any rebroadcast, retransmission, or account of this website is prohibited without the express written consent of Major League Baseball.</em></p>
+        <div class="footer" onclick="toggleNav()">
+            <span id="footer-symbol">●</span>
+            <div class="nav-bar" id="nav-bar">
+                <a href="#" target="_blank">email</a>
+                <a href="https://substack.com/@joepetro" target="_blank">substack</a>
+                <a href="https://www.instagram.com/atjoepetro" target="_blank">instagram</a>
+                <a href="https://bsky.app/profile/atjoepetro.bsky.social" target="_blank">bluesky</a>
+            </div>
+        </div>
     </div>
-
-    <nav>
-        <ul>
-            <li><a href="#Writing">Writing</a></li>
-            <li><a href="#Mixtapes">Mixtapes</a></li>
-            <li><a href="#Design">Design</a></li>
-        </ul>
-    </nav>
-
-    <footer class="footer">
-        <p>Footer</p>
-    </footer>
 </body>
 </html>
